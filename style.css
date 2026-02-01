@@ -1,0 +1,121 @@
+/* Grundlayout */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(120deg, #e3f2fd, #fce4ec);
+    margin: 0;
+    color: #333;
+}
+
+header {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 10px;
+}
+
+/* Boxen */
+.box {
+    width: 90%;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+/* Farben pro Zeitform */
+.partizip {
+    background: #fff8e1;
+    border-left: 12px solid #ff9800;
+}
+
+.haber {
+    background: #e8f5e9;
+    border-left: 12px solid #4caf50;
+}
+
+.subjuntivo {
+    background: #ede7f6;
+    border-left: 12px solid #673ab7;
+}
+
+.signal {
+    background: #fce4ec;
+    border-left: 12px solid #e91e63;
+}
+
+/* Tabellen */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #bbb;
+    padding: 10px;
+}
+
+th {
+    background: rgba(0,0,0,0.07);
+}
+
+/* Listen */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 6px;
+    font-weight: bold;
+}
+
+/* Beispiele */
+.example {
+    margin-top: 15px;
+    background: rgba(255,255,255,0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+.signals {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Footer */
+footer {
+    background: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 12px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .box {
+        padding: 18px;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+}
